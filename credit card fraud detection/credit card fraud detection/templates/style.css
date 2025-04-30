@@ -1,0 +1,100 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff4c4c;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.7);
+    margin-bottom: 2rem;
+}
+
+form {
+    background: #1f1f1f;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+label {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #f5f5f5;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.6rem;
+    background: #2a2a2a;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    grid-column: span 2;
+    width: 100%;
+    background: #ff4c4c;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff1a1a;
+}
+
+#result {
+    grid-column: span 2;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ff4c4c;
+}
+/* Input container for styling the currency symbol */
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    width: 100%;
+    padding-right: 1.5rem; /* Add space for the $ symbol */
+    box-sizing: border-box;
+}
+
+.currency-symbol {
+    position: absolute;
+    right: 10px;
+    color: #f5f5f5;
+    font-weight: bold;
+}
